@@ -35,14 +35,3 @@ class UserProfileManager {
   }
 }
 
-const profileManager = new UserProfileManager();
-
-profileManager.addUser({ name: "Alice", email: "alice@example.com" });
-profileManager.addUser({ name: "Bob", email: "bob@example.com" });
-
-console.log(profileManager.getAllUsers());
-
-profileManager.updateUser(1, { name: "Alicia" });
-profileManager.removeUser(2);
-
-console.log(profileManager.findUserByName("Ali"));
